@@ -32,6 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.collectionView.contentInset = UIEdgeInsetsMake(20, 20, 20, 20);
     self.flowLayout.minimumInteritemSpacing = 20;
     self.flowLayout.minimumLineSpacing = 20;
     self.flowLayout.itemSize = CGSizeMake(100, 100);
