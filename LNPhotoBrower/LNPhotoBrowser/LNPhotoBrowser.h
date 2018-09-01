@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum : NSUInteger {
+typedef NS_ENUM(NSUInteger, LNAnimationType) {
     LNAnimationTypeScale,
     LNAnimationTypePush
-} LNAnimationType;
+} NS_ENUM_AVAILABLE_IOS(7_0);
 
 @class LNPhotoBrowser;
 @protocol LNPhotoBrowserDelegate <NSObject>
