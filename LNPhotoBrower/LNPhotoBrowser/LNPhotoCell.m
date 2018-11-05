@@ -8,7 +8,7 @@
 
 #import "LNPhotoCell.h"
 #import "LNPhotoBrowser.h"
-#import "UIImageView+WebCache.h"
+#import <UIImageView+WebCache.h>
 #import "LNLoadingView.h"
 
 @interface LNPhotoCell()<UIScrollViewDelegate, UIGestureRecognizerDelegate>
@@ -192,6 +192,7 @@
             self.loadingView.loading = NO;
         }else{
             self.loadingView.loading = YES;
+
             [self.imageView sd_setImageWithURL:imageURL placeholderImage:self.placeHolderImage options:0 progress:nil completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
                 self.loadingView.loading = NO;
                 [self adjustImageViewFrame];

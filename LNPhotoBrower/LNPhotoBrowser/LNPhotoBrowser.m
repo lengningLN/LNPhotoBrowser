@@ -8,7 +8,7 @@
 
 #import "LNPhotoBrowser.h"
 #import "LNPhotoCell.h"
-#import "SDImageCache.h"
+#import <SDImageCache.h>
 
 @interface LNPhotoBrowser ()
 <UICollectionViewDelegate, UICollectionViewDataSource>

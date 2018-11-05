@@ -21,9 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/lengningLN/LNPhotoBrowser.git", :tag => spec.version }
 
-  spec.exclude_files = "LNPhotoBrower/LNPhotoBrowser/*.{h,m}"
-
-
-  spec.framework  = "SDWebImage"
+  spec.source_files = "LNPhotoBrower/LNPhotoBrowser/*.{h,m}"
+  spec.dependency  'SDWebImage'
 
 end
